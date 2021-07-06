@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">StayFit</string>
+    <string name="start_your_watch">Start Your Watch!</string>
+    <string name="do_your_work_on_your_own_pace">Do your work on your own pace</string>
+    <string name="get_started">Get Started</string>
+    <string name="start_now">Start Now</string>
+    <string name="finish_woekout">Finish Woekout</string>
+    <string name="finish_workout" />
+    <string name="finish_workout1">Finish Workout</string>
+    <string name="what_would_you_do_today">What would you do today?</string>
+    <string name="alarm">Alarm</string>
+    <string name="stop_watch">Stop Watch</string>
+    <string name="timer">Timer</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="stayfit">StayFit</string>
+    <string name="done">Done</string>
+    <string name="make_fitness_a_habit">Make fitness a habit.</string>
+    <string name="rateAppTitle">Rate Our App</string>
+</resources>

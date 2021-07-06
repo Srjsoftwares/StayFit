@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetAlarmActivity">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/clockc"
+        android:background="@drawable/borders"
+
+        android:scaleType="fitCenter"/>
+    <Button
+        android:id="@+id/Done"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:background="@drawable/alarmbutton"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="50dp"
+        />
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/make_fitness_a_habit"
+        android:textColor="#59935A"
+        android:textStyle="italic"
+        android:layout_marginTop="570dp"
+        android:textSize="24sp" />
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numbersSelectorColor="#000000"
+        android:numbersTextColor="#000000"
+        android:numbersInnerTextColor="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:numbersBackgroundColor="#ABEAAC"
+        />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:layout_marginStart="100dp"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/exercise"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"/>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".stepCount">
+
+    <TextView
+        android:id="@+id/stepCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="55sp"
+        android:textColor="#00FF00"
+        android:textStyle="bold"
+        android:text="Step Counter" />
+    <TextView
+        android:id="@+id/stepDetector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/stepCounter"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold|italic"
+        android:text="Step Detector" />
+
+</RelativeLayout>

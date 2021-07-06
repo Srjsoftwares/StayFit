@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer"
+    android:background="#E4E6EE"
+    >
+
+        <ImageView
+            android:id="@+id/clock_circle"
+            android:layout_width="276dp"
+            android:layout_height="275dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bgcircle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"/>
+
+
+        <ImageView
+            android:id="@+id/clock_anchor"
+            android:layout_width="358dp"
+            android:layout_height="357dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/icanchor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text='"Run like theres \n no tomorrow"'
+        android:textAlignment="center"
+        android:lineSpacingExtra="8dp"
+        android:textColor="#474747"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/clock_circle"
+        app:layout_constraintBottom_toTopOf="@id/countdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="#000000"
+        android:textSize="62sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clock_anchor"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <Button
+        android:id="@+id/timerStart"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/countdown"
+        android:text="Start"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/button_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countdown"
+        />
+
+    <Button
+        android:id="@+id/timerReset"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/timerStart"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerStart"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
